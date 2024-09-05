@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.8.2/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.8.2/core.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebChat</title>
+    <link rel="stylesheet" href="../assets/css/webchat.css">
+</head>
+<body>
+    <!-- The Popup -->
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <p id="popupMessage">Some text in the Popup..</p>
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            WebChat
+        </div>
+
+        <div class="chat-messages" id="chat-messages">
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Type your message here..." />
+            <button id="send-button" type="submit">Send</button>
+        </div>
+    </div>
+
+    <section class="pyscript">
+        <script type="py" src="../assets/python/pages/message.py" config="../pyscript.json"></script>
+    </section>
+</body>
+</html>

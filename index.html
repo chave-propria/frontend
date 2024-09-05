@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+     <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.8.2/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.8.2/core.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+     <!-- The Popup -->
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close">&times;</span>
+            <p id="popupMessage">Some text in the Popup..</p>
+        </div>
+    </div>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="LoginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="on" required>
+            </div>
+            <button type="submit" class="btn" id="login-btn">Login</button>
+        </form>
+        <div class="footer">
+            <p>Don't have an account? <a href="/register">Sign up</a></p>
+        </div>
+    </div>
+    <section class="pyscript">
+        <script type="py" src="assets/python/pages/authentication.py" config="pyscript.json"></script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+    "name": "WebChat",
+
+    "files": {
+        "{FROM}": "assets/python/utils",
+        "{FROM}/cifra/InfoBlocks.py": "",
+        "{FROM}/cifra/IDEA.py": "",
+        "{FROM}/cifra/HandleCryptogram.py": "",
+        "{FROM}/popup.py": ""
+    }
+}
